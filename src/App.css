@@ -1,38 +1,115 @@
+body {
+  height: 100%;
+  font-family: "Poetsen One", sans-serif;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+.link {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(77, 53, 53);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Poetsen One", sans-serif;
+  letter-spacing: 2px;
+}
 .App {
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 45px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin: 70px;
+}
+form {
+  display: flex;
+}
+.search {
+  width: 50vw;
+  height: 5vh;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #575756;
+  box-shadow: inset 0px 0px 0px 4px #e2e2cc;
+  border-radius: 50px;
+  font-size: 25px;
+}
+.img {
+  height: 60px;
+  cursor: pointer;
+}
+.img:hover {
+  background-color: #fff;
+  transition: all 2s ease;
+  border-radius: 30px;
+}
+.recipes {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style-type: none;
+  font-size: 25px;
+  background-color: #ddcad8;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.image {
+  border-radius: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+h2 {
+  font-size: 35px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+.slideUp {
+  display: flex;
+  padding: 10px;
+  letter-spacing: 3px;
+  /* background-color: #e4b2db; */
+  text-decoration: none;
+  font-size: 25px;
+  color: #575756;
+}
+button {
+  border: none;
+  background: none;
 }
