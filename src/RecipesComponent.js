@@ -10,7 +10,6 @@ function RecipesComponent({label, image, calories, ingredients}) {
             <ul className='list'>
                 {ingredients.map((ingredient, index) => (
                     <li key={index}> 
-                       {/* <img src={check} width='30px' alt='icon'/> */}
                         {ingredient}
                     </li>
                 ))}
